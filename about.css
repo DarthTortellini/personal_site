@@ -1,0 +1,34 @@
+@font-face {
+    font-family: AstroSpace;
+    src: url("AstroSpace-eZ2Bg.ttf");
+    font-family: Cool;
+    src: url("EarthOrbiterTitle-ezdO.otf")
+  /*  ; font-family: Enzo;
+    src: url("Enso-qWRq.ttf");*/
+}
+
+.nav-item, h1 {
+    font-family: Cool !important;
+    
+    
+}
+
+body, html {
+    height: 100%;
+}
+
+
+#aboutlist {
+    font-family:monospace ;
+    margin: 0;
+	padding: 0;
+    height: 100%;
+    width: 100%;
+	}
+
+.aboutItem{
+   list-style-type: none;
+   text-align: center;
+   padding-top: 10px;
+   padding-right: 30px;
+}

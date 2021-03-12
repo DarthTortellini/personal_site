@@ -1,0 +1,49 @@
+@font-face {
+    font-family: AstroSpace;
+    src: url("AstroSpace-eZ2Bg.ttf");
+    font-family: Cool;
+    src: url("EarthOrbiterTitle-ezdO.otf")
+}
+
+* {
+    font-family: Cool !important;
+    
+}
+
+
+
+body, html {
+    height: 100%;
+}
+
+#back-ground-div {
+    margin: 0;
+	padding: 0;
+    height: 100%;
+    width: 100%;
+	background-image: url('cool.png')
+    ; background-size: 100%;
+    
+   
+}
+@media(max-width:800px){
+    #back-ground-div {
+        background-image: none;
+        background: white;
+    }
+    
+}
+#portfolio-divs {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+#footer-div {
+    background-color: black;
+}
+
+.animate__animated.animate__zoomInUp {
+    --animate-duration: 800ms;
+    --animate-delay: 10s;
+  }
