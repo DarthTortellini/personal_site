@@ -1,54 +1,102 @@
 @font-face {
-    font-family: AstroSpace;
-    src: url("AstroSpace-eZ2Bg.ttf");
-    font-family: Cool;
-    src: url("EarthOrbiterTitle-ezdO.otf")
-}
-
-* {
-    font-family: Cool !important;
+  font-family: AstroSpace;
+  src: url("AstroSpace-eZ2Bg.ttf");
+  font-family: Cool;
+  src: url("EarthOrbiterTitle-ezdO.otf")
 }
 
 body, html {
-    height: 100%;
+  height: 100%;
+  font-family: Cool !important;
 }
 
-#back-ground-div {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url('cool.png');
-    background-size: 100%;
+#page {
+  height: 100vh;
+  width: 100%;
+  
+  background: #fff;
+}
+
+.nav-wrap {
+  height: 4%;
+}
+
+#back-ground-div  {
+  margin: 0;
+  padding: 0;
+  height: 91%;
+  width: 100%;
+  background: url('cool.png') no-repeat top right;
+  background-size: cover;
+}
+
+.intro {
+  text-align: center;
+}
+
+@media(max-width: 1024px){
+  .intro {
+      text-align: left;
+      font-size: 60px;
+      margin-left: 20px;
+  }
+
+  .intro.subtitle {
+      font-size: 35px;
+  }
 }
 
 @media screen and (max-width:800px) {
-    #back-ground-div {
-        background-image: none;
-        background: white;
-    }
-    * {
-        font-size: 12px !important;
-    }
-    h1 {
-        font-size: 2rem !important;
-    }
-    h2 {
-        font-size: 1.5rem !important;
-    }
-    li {
-        font-size: .5rem !important;
-    }
+  #back-ground-div {
+      background-image: none;
+      background: white;
+  }
+
+  .intro {
+      text-align: center;
+  }
+
+  body {
+      font-size: 12px !important;
+  }
+  h1 {
+      font-size: 2rem !important;
+  }
+  h2 {
+      font-size: 1.5rem !important;
+  }
+  li {
+      font-size: .5rem !important;
+  }
+
 }
 
 #portfolio-divs {
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-    align-content: center;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  align-content: center;
 }
 
 #footer-div {
-    background-color: black;
+  background-color: #343a40;
+  height: 5%;
+  display: flex !important;  
+  flex-direction: row !important;
+  justify-content: space-around !important;
+text-decoration: none !important;
 }
+
+.footer-distributed{
+  display: flex !important;  
+  flex-direction: row !important;
+  justify-content: space-evenly!important;
+text-decoration: none !important;
+background-color:#343a40!important; 
+
+}
+ .pp {
+   padding-left: 90px;
+    
+ }
